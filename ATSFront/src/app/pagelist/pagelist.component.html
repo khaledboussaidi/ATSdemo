@@ -1,0 +1,12 @@
+<tr *ngFor="let product of products">
+  <td>
+    <div class="card">
+      <img src={{product.imageUrl}} alt="Denim Jeans" style="width:100%">
+      <h1><a href="product/{{product.id}}">{{product.productName}}</a></h1>
+      <p class="price">{{product.price}}</p>
+      <p >Categorie{{product.category}}</p>
+      <p>review:{{AVG(product.reviewsSet)}}</p>
+    </div>
+  </td>
+</tr>
+<p><button (click)="nextPage()">next page</button></p>

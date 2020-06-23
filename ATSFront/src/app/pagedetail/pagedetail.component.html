@@ -1,0 +1,13 @@
+<td>
+  <div class="card">
+    <img src={{product.imageUrl}} alt="Denim Jeans" style="width:100%">
+    <h1><a href="product/{{product.id}}">{{product.productName}}</a></h1>
+    <p class="price">{{product.price}}</p>
+    <p >Categorie{{product.category}}</p>
+    <tr *ngFor="let reveiw of product.reviewsSet">
+      <p> Review:{{reveiw.id}}</p>
+      <p> content:{{reveiw.content}}</p>
+      <p> rating:{{reveiw.rating}}</p>
+
+    </tr>
+  </div>
